@@ -1,0 +1,7 @@
+{
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "cmake.sourceDirectory": "S:/Documents/Github/vizio/windows",
+    "chat.tools.terminal.autoApprove": {
+        "Test-Path": true
+    }
+}

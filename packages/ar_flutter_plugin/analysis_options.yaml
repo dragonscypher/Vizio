@@ -1,0 +1,25 @@
+# Relaxed analysis for vendored third-party plugin code.
+# Keeps error/warning detection but suppresses style lints we don't own.
+
+analyzer:
+  exclude:
+    - "example/**"
+    - "test/**"
+  errors:
+    # Downgrade noisy rules to ignore for vendored code
+    avoid_print: ignore
+    prefer_interpolation_to_compose_strings: ignore
+    library_private_types_in_public_api: ignore
+    prefer_initializing_formals: ignore
+    no_logic_in_create_state: ignore
+    deprecated_member_use: ignore
+    depend_on_referenced_packages: ignore
+    unused_element: ignore
+
+linter:
+  rules:
+    avoid_print: false
+    prefer_interpolation_to_compose_strings: false
+    library_private_types_in_public_api: false
+    prefer_initializing_formals: false
+    no_logic_in_create_state: false
